@@ -9,14 +9,17 @@ body {
   }
   
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    
+    /* margin: 0 auto; */
     padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #df0c0c; */
   }
   
   /* Landing page styles */
   .landing-page {
-    background-color: #f0f0f0;
+    background-color: #514949;
   }
   
   .navbar {
@@ -50,7 +53,7 @@ body {
   }
   
   .landing-page {
-    padding: 50px 0;
+    /* padding: 50px 0; */
     text-align: center;
     color: #333;
   }
@@ -122,20 +125,18 @@ body {
   .footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    
   }
-  .follow-us-section {
-    padding: 20px 0;
+  .footer-container{
+    display: flex;
+    justify-content: center;
   }
   
-  .follow-us-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
   
   .social-icons {
     display: flex;
+    margin: auto;
+    
   }
   
   .social-icons a {
@@ -149,7 +150,7 @@ body {
   }
   .hero-image-container {
     position: relative;
-    height: 500px; /* Set the desired height for your hero image */
+    height: auto; /* Set the desired height for your hero image */
     overflow: hidden;
   }
   
@@ -157,8 +158,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
     object-position: center;
   }

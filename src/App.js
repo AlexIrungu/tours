@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import React from 'react';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, useLocation } from 'react-router-dom'
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/About';
@@ -14,9 +14,14 @@ import LandingPage from './components/LandingPage'
 
 
 function App() {
+  const location = useLocation()
+  const isLandingPage = location.pathname === "/"
+
   return (
     <div className='App' >
-    <Navbar />  
+    {
+      !isLandingPage && 
+      <Navbar /> }  
     <Switch>
       <Route path="/" exact component={LandingPage} />
       {/* <Route component={Navbar} /> */}

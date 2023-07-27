@@ -20,7 +20,7 @@ function Faq(){
     return(
         <div>
             <main className="faq-section">
-        <div className="container">
+        <div className="faq-container">
           <h1>Frequently Asked Questions</h1>
           <div className="faq-list">
             {faqData.map((item, index) => (
