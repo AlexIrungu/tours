@@ -4,12 +4,7 @@ import "./Home.css"
 function Home(){
     return(
         <div className="home-page">
-      {/* <header className="navbar">
-        <div className="container">
-          <h1 className="logo">Tourism Website</h1>
-         
-        </div>
-      </header> */}
+      
       <main className="hero-section">
         <div className="container">
           <div className="hero-content">
@@ -40,11 +35,7 @@ function Home(){
           </div>
         </div>
       </section>
-      {/* <footer className="footer">
-        <div className="container">
-          <p>&copy; 2023 Tourism Website. All rights reserved.</p>
-        </div>
-      </footer> */}
+     
     </div>
   );
 };

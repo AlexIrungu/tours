@@ -3,18 +3,12 @@ import { Link } from "react-router-dom";
 import './LandingPage.css'
 function LandingPage(){
     return(
-        // <div className="landing-page">
-        //     <h1>Welcome to our tourism website</h1>
+       
             <div className="landing-page">
       <header className="navbar">
         <div className="container">
           <h1 className="logo">Tourism Website</h1>
-          {/* <nav>
-            <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
-            </ul>
-          </nav> */}
+        
         </div>
       </header>
       <main className="hero-section">
