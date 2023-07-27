@@ -11,8 +11,11 @@ function About() {
         <div className="container">
           <div className="about-content">
             <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget malesuada nulla. Proin iaculis consectetur ex. Ut consequat libero at lorem consequat hendrerit. Etiam dignissim eu urna eget consectetur. Nullam vitae felis at nunc tincidunt facilisis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget malesuada nulla. Proin iaculis consectetur ex. Ut consequat libero at lorem consequat hendrerit. Etiam dignissim eu urna eget consectetur. Nullam vitae felis at nunc tincidunt facilisis.</p>
+            <p>DANIL SCENIC TOURS is a private limited company registered in Kenya founded by two shareholders/directors. It is located along Northern Bypass, Ebenezer Building. Being licensed by the Tourism Regulatory Authority as a Tour operator, it provides practical support to local and Foreign tourists in Kenya and deals with various organizational aspects of a trip ranging from creating touristic packages, determining the needs of various categories of clients, and making travel arrangements (accommodation, transport, meals, tours, insurance, and so on).
+The company has competent staff members with requisite knowledge and skills in tourism.
+
+</p>
+            <p>The staff members include; Tour guide/drivers, Tour consultants, and Project Managers.</p>
             <button onClick={() => setOpen(true)}>Play Video</button>
           </div>
           <div className="about-image">

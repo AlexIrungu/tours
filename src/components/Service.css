@@ -82,3 +82,23 @@ body {
     padding: 20px 0;
   }
   
+/* For medium-sized screens like tablets */
+@media (max-width: 992px) {
+    .container {
+      max-width: 800px;
+    }
+  }
+  
+  /* For small screens like phones */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 500px;
+    }
+    .navbar {
+      text-align: center;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+    }
+  }
