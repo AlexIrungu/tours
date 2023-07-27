@@ -21,7 +21,7 @@ function Navbar(){
           <Link  className="nav-link" to="/about" >About</Link>
         </li>
         <li className="nav-item">
-          <Link  className="nav-link" to="/services" >Service</Link>
+          <Link  className="nav-link" to="/service" >Service</Link>
         </li>
         <li className="nav-item">
           <Link  className="nav-link" to="/gallery" >Gallery</Link>
@@ -30,8 +30,9 @@ function Navbar(){
           <Link  className="nav-link" to="/faq" >Faq</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/contact" >Contact</Link>
+          <Link className="nav-link" to="/contact" >ContactUs</Link>
         </li>
+       
         {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
