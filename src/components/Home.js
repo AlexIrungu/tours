@@ -7,7 +7,7 @@ function Home(){
       
       <main className="hero-section">
         <div className="container">
-          <div className="hero-content">
+          <div className="home-content">
             <h1>Welcome to Our Beautiful Destination</h1>
             <p>Experience the beauty of nature, culture, and adventure.</p>
           </div>

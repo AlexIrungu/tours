@@ -12,27 +12,31 @@ import './LandingPage.css'
 function LandingPage(){
     return(
        
-            <div className="landing-page">
-      <header className="navbar">
-        <div className="container">
-          <h1 className="logo">Tourism Website</h1>
-        
-        </div>
-      </header>
+     <div className="landing-page">
+     
       <main className="hero-section">
         <div className="container">
+        <div className="hero-image-container">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg"
+                alt="Image 1"
+              />
           <div className="hero-content">
-            <h1>Welcome to Our Beautiful Destination</h1>
+            <h1>
+          <span>Welcome to Our Beautiful Destination</span>
+          </h1>
             <p>Experience the beauty of nature, culture, and adventure.</p>
             <Link to="/home" className="btn btn-primary">Discover Now</Link>
           </div>
+        </div>
         </div>
       </main>
       <section className="image-section">
         <div className="container">
           <div className="image-gallery">
             {/* Add your images here */}
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg" alt="Image 1" />
+           
+            
             {/* <img src="/images/image2.jpg" alt="Image 2" />
             <img src="/images/image3.jpg" alt="Image 3" /> */}
           </div>
