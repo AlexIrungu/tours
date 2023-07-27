@@ -4,6 +4,7 @@ import ModalVideo from 'react-modal-video';
 
 function About() {
   const [isOpen, setOpen] = useState(false);
+  const [isOpen2, setOpen2] = useState(false);
 
   return (
     <div>
@@ -16,17 +17,24 @@ The company has competent staff members with requisite knowledge and skills in t
 
 </p>
             <p>The staff members include; Tour guide/drivers, Tour consultants, and Project Managers.</p>
-            <button onClick={() => setOpen(true)}>Play Video</button>
+           
           </div>
           <div className="about-image">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmcuclD4W2NQLcOx_FzDycMKvToYyaMxlkA&usqp=CAU" alt="About" />
           </div>
+         
         </div>
       </main>
 
       <ModalVideo channel='youtube' isOpen={isOpen} videoId='irG_Kj21c1I' onClose={() => setOpen(false)} />
+      <button onClick={() => setOpen(true)}>Play Video</button>
+
+      <ModalVideo channel='youtube' isOpen={isOpen2} videoId='uayhhleFczc' onClose={() => setOpen2(false)} />
+      <button onClick={() => setOpen2(true)}>Play Video</button>
     </div>
   );
 }
 
 export default About;
+
+
