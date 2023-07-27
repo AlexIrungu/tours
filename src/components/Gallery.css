@@ -1,0 +1,40 @@
+/* Set the background color of the body */
+body {
+    background-color: #f9f9f9;
+  }
+  
+  /* Center the gallery wrapper and set its max width */
+  .gallery-wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  
+  /* Set the spacing between gallery items */
+  .gallery-wrapper {
+    gap: 20px;
+    padding: 12px;
+  }
+  
+  /* Style the images inside gallery items and add hover effect */
+  .gallery-item img  {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: all ease 200ms;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(0.9);
+  }
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* change the number of columns as needed */
+    gap: 20px;
+    padding: 12px;
+  }
+  .gallery-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* add this property */
+  }
+  

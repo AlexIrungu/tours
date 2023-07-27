@@ -14,7 +14,7 @@ function LandingPage(){
        
      <div className="landing-page">
      
-      <main className="hero-section">
+    
         <div className="container">
         <div className="hero-image-container">
               <img
@@ -30,7 +30,7 @@ function LandingPage(){
           </div>
         </div>
         </div>
-      </main>
+      
       <section className="image-section">
         <div className="container">
           <div className="image-gallery">
