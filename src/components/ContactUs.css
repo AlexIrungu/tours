@@ -1,0 +1,38 @@
+/* ContactUs.css */
+
+/* Style the overall layout of the ContactUs component */
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Style the navigation bar */
+  .navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Style the main content area */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  

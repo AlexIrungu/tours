@@ -1,104 +1,59 @@
-/* src/styles.css */
-/* Add your custom styles here */
+/* Service.css */
 
-/* Global styles */
+/* Set the background color of the body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #f9f9f9;
   }
   
-  .container {
-    max-width: 1200px;
+  /* Center the service container and set its max width */
+  .service-container {
     margin: 0 auto;
-    padding: 20px;
+    max-width: 1000px;
   }
   
-  /* Service page styles */
-  .service-page {
-    background-color: #f0f0f0;
-  }
-  
-  .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-  }
-  
-  .navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .service-section {
-    padding: 50px 0;
-    text-align: center;
-    color: #333;
+  /* Style the accordion */
+  .accordion {
+    gap: 20px;
+    padding: 12px;
   }
   
   .service-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .service-card-header {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: #f2f2f2;
   }
   
   .service-card img {
-    max-width: 200px;
-    margin-right: 20px;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   
-  .service-content {
-    flex: 1;
-    text-align: left;
+  .service-card h2 {
+    margin-left: 10px;
+    flex-grow: 1;
+    font-size: 18px;
   }
   
-  .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  .service-card-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
   
-/* For medium-sized screens like tablets */
-@media (max-width: 992px) {
-    .container {
-      max-width: 800px;
-    }
+  .service-card.active .service-card-content {
+    max-height: 1000px;
+    padding: 10px;
+    transition: max-height 0.5s ease-in;
   }
   
-  /* For small screens like phones */
-  @media (max-width: 768px) {
-    .container {
-      max-width: 500px;
-    }
-    .navbar {
-      text-align: center;
-    }
-    .nav-links {
-      display: flex;
-      flex-direction: column;
-    }
-  }
