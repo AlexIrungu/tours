@@ -1,62 +1,44 @@
 /* About.css */
 
-/* Set the background color of the body */
-body {
-    background-color: #f9f9f9;
-  }
-  
-  /* Style the about section */
-  .about-section {
-    padding: 50px 0;
-  }
-  
-  .container {
+/* Main container */
+.about-section {
+    padding: 2rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
   }
   
-  .about-content {
-    flex: 1;
-  }
-  
-  .about-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .about-content p {
-    font-size: 16px;
+  /* About card */
+  .about-card {
+    width: 48%;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .about-image-container {
-    flex: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    width: 48%;
   }
   
   .about-image {
     width: 100%;
-    height: auto;
-    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .play-video-button {
-    display: block;
-    margin-top: 20px;
-    color: #fff;
+    padding: 0.75rem 1rem;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.2s ease;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
   }
   
   .play-video-button:hover {
-    background-color: #0056b3;
+    background-color: #ff865c;
   }
   
