@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import "./About.css";
 import ModalVideo from 'react-modal-video';
-
+import people from './assets/people.jpg'
+import k from './assets/k.jpeg'
+import wild from './assets/wilderbeastsss.jpg'
 function About() {
   const [isOpen, setOpen] = useState(false);
   const [isOpen2, setOpen2] = useState(false);
@@ -21,7 +23,7 @@ function About() {
         {/* Image container */}
         <div className="about-image-container">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmcuclD4W2NQLcOx_FzDycMKvToYyaMxlkA&usqp=CAU"
+            src={people}
             alt="About"
             className="about-image"
           />
@@ -34,7 +36,7 @@ function About() {
         <div className="about-card">
           {/* Additional image 1 */}
           <img
-            src="https://example.com/image1.jpg"
+            src={k}
             alt="Image 1"
             className="about-image"
           />
@@ -43,7 +45,7 @@ function About() {
         <div className="about-card">
           {/* Additional image 2 */}
           <img
-            src="https://example.com/image2.jpg"
+            src={wild}
             alt="Image 2"
             className="about-image"
           />
@@ -52,8 +54,9 @@ function About() {
         {/* Additional about card */}
         <div className="about-card">
           <p style={{ color: '#333333' }}>
-            Some more details about the company and its services can be included here.
-          </p>
+          Come, experience the magic of Kenya, where adventure, culture, and natural beauty await. 
+          Your journey of a lifetime begins here, with us. Let's make your travel dreams a reality. 
+            Welcome To Kenya .  </p>.
         </div>
       </main>
 

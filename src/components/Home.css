@@ -12,8 +12,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://media.istockphoto.com/id/160189580/photo/zebras-in-the-morning.jpg?s=612x612&w=0&k=20&c=Va_jlYbW57Xtm3mNJYeNmz6uEv01UulFjZfhyTjo1uc=")
+  background: linear-gradient(rgba(18, 17, 17, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/beauty.jpg")
       center/cover no-repeat;
   color: #fff;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 36px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -68,7 +68,7 @@ body {
 .hero-image {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
