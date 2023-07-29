@@ -43,3 +43,83 @@
   margin-right: 10px; /* Add some space to the right of the image */
   
 }
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .gallery {
+    padding: 10px;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 24px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .gallery-item img {
+    max-height: 200px;
+  }
+
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  .service-card h2 {
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 14px;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+
+  .contact p {
+    font-size: 16px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
