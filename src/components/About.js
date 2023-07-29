@@ -1,9 +1,11 @@
+// About.js
 import React, { useState } from 'react';
 import "./About.css";
 import ModalVideo from 'react-modal-video';
 import people from './assets/people.jpg'
 import k from './assets/k.jpeg'
 import wild from './assets/wilderbeastsss.jpg'
+
 function About() {
   const [isOpen, setOpen] = useState(false);
   const [isOpen2, setOpen2] = useState(false);
@@ -30,6 +32,9 @@ function About() {
           <button onClick={() => setOpen(true)} className="play-video-button" style={{ backgroundColor: '#ff5722' }}>
             Play Video 1
           </button>
+          <div className="about-card-overlay">
+            <a href="#play-video" onClick={() => setOpen(true)}>Click to Play Video</a>
+          </div>
         </div>
 
         {/* Additional image cards */}
@@ -40,6 +45,9 @@ function About() {
             alt="Image 1"
             className="about-image"
           />
+          <div className="about-card-overlay">
+            <a href="#play-video" onClick={() => setOpen(true)}>Click to Play Video</a>
+          </div>
         </div>
 
         <div className="about-card">
@@ -49,14 +57,21 @@ function About() {
             alt="Image 2"
             className="about-image"
           />
+          <div className="about-card-overlay">
+            <a href="#play-video" onClick={() => setOpen(true)}>Click to Play Video</a>
+          </div>
         </div>
 
         {/* Additional about card */}
-        <div className="about-card">
+        <div className="about-card about-cta-card">
           <p style={{ color: '#333333' }}>
-          Come, experience the magic of Kenya, where adventure, culture, and natural beauty await. 
-          Your journey of a lifetime begins here, with us. Let's make your travel dreams a reality. 
-            Welcome To Kenya .  </p>.
+            Come, experience the magic of Kenya, where adventure, culture, and natural beauty await.
+            Your journey of a lifetime begins here, with us. Let's make your travel dreams a reality.
+            Welcome To Kenya.
+          </p>
+          <button className="cta-button" style={{ backgroundColor: '#007bff' }}>
+            Book Your Adventure
+          </button>
         </div>
       </main>
 

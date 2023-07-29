@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: #f9f9f9; /* Added background color */
   }
   
   /* About card */
@@ -40,5 +41,57 @@
   
   .play-video-button:hover {
     background-color: #ff865c;
+  }
+  
+  /* Hover effect for additional image cards */
+  .about-card:hover .about-card-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .about-card-overlay {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: white;
+    opacity: 0;
+    /* visibility: hidden; */
+    transition: opacity 0.3s ease;
+  }
+  
+  .about-card-overlay p {
+    font-size: 18px;
+  }
+  
+  /* Styling for the additional about card */
+  .about-cta-card {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .about-cta-card p {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  /* CTA button */
+  .cta-button {
+    padding: 0.75rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
   }
   

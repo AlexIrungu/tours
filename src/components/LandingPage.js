@@ -8,13 +8,15 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./LandingPage.css";
+import flam from './assets/flamingoes.jpg'
 
 function LandingPage() {
   return (
     <div className="landing-page">
       <div className="hero-image-container">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg"
+          src={flam}
+        //   "https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg"
           alt="Image 1"
         />
 
