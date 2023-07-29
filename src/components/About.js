@@ -1,10 +1,9 @@
-// About.js
 import React, { useState } from 'react';
 import "./About.css";
 import ModalVideo from 'react-modal-video';
-import people from './assets/people.jpg'
-import k from './assets/k.jpeg'
-import wild from './assets/wilderbeastsss.jpg'
+import people from './assets/people.jpg';
+import k from './assets/k.jpeg';
+import wild from './assets/wilderbeastsss.jpg';
 
 function About() {
   const [isOpen, setOpen] = useState(false);
@@ -29,9 +28,13 @@ function About() {
             alt="About"
             className="about-image"
           />
-          <button onClick={() => setOpen(true)} className="play-video-button" style={{ backgroundColor: '#ff5722' }}>
-            Play Video 1
-          </button>
+          <div className="about-card-content">
+            <h1 style={{ color: '#007bff' }}>Join Us</h1>
+            <p style={{ color: '#333333' }}>
+              Travelers who want to experience Kenya's spectacular beauty and cultural richness can join Danil Scenic Tours for an educational and enjoyable experience.
+              With competent staff members who possess extensive knowledge and skills in tourism, travelers can expect seamless travel arrangements, personalized tour packages, and expert guidance throughout their journey. Whether it's witnessing awe-inspiring wildlife in national parks, immersing in local traditions, embarking on thrilling adventures, or simply enjoying the comfort of carefully selected accommodations, Danil Scenic Tours promises to deliver unforgettable memories and create cherished travel moments. Join us in discovering the wonders of Kenya
+            </p>
+          </div>
           <div className="about-card-overlay">
             <a href="#play-video" onClick={() => setOpen(true)}>Click to Play Video</a>
           </div>
@@ -45,6 +48,13 @@ function About() {
             alt="Image 1"
             className="about-image"
           />
+          {/* <div className="about-card-content">
+            <h1 style={{ color: '#007bff' }}>Join Us</h1>
+            <p style={{ color: '#333333' }}>
+              Travelers who want to experience Kenya's spectacular beauty and cultural richness can join Danil Scenic Tours for an educational and enjoyable experience.
+              With competent staff members who possess extensive knowledge and skills in tourism, travelers can expect seamless travel arrangements, personalized tour packages, and expert guidance throughout their journey. Whether it's witnessing awe-inspiring wildlife in national parks, immersing in local traditions, embarking on thrilling adventures, or simply enjoying the comfort of carefully selected accommodations, Danil Scenic Tours promises to deliver unforgettable memories and create cherished travel moments. Join us in discovering the wonders of Kenya
+            </p>
+          </div> */}
           <div className="about-card-overlay">
             <a href="#play-video" onClick={() => setOpen(true)}>Click to Play Video</a>
           </div>

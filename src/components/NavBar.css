@@ -3,7 +3,7 @@
 .navbar {
     background-color: #b9660d;
     color: white;
-    padding: 0.1rem;
+    padding: 0.5rem 1rem;
   }
   
   .navbar-container {
@@ -18,7 +18,7 @@
   }
   
   .logo {
-    width: 100px;
+    width: 80px;
   }
   
   .menu-button {
