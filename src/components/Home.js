@@ -59,7 +59,7 @@ function Home() {
             adventure starts here!
           </motion.p>
         </div>
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <motion.img
             src={makiwa}
             alt="Hero"
@@ -67,7 +67,7 @@ function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           />
-        </div>
+        </div> */}
       </main>
       <section className="details-section">
         <div className="details-container">
