@@ -1,54 +1,94 @@
-/* src/components/ContactForm.css */
+/* ContactForm.css */
 
+/* Main container */
 .contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 2rem;
     background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  /* Heading */
   .contact-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .contact-form label {
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
+    color: #333;
   }
   
-  .contact-form input,
+  /* Form */
+  .contact-form form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  /* Form group */
+  .contact-form .form-group {
+    display: grid;
+    gap: 0.5rem;
+  }
+  
+  /* Label */
+  .contact-form label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Input and Textarea */
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
   .contact-form textarea {
-    padding: 10px;
+    width: 100%;
+    padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
   }
   
+  /* Textarea */
   .contact-form textarea {
     resize: vertical;
   }
   
-  .contact-form button {
+  /* Submit button */
+  .contact-form button[type="submit"] {
+    padding: 0.75rem 1.5rem;
     background-color: #007bff;
     color: #fff;
-    padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
   }
   
-  .contact-form button:hover {
+  .contact-form button[type="submit"]:hover {
     background-color: #0056b3;
+  }
+  
+  /* Contact details section */
+  .contact-details {
+    margin-top: 2rem;
+  }
+  
+  /* Contact details heading */
+  .contact-details h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Contact details text */
+  .contact-details p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    .contact-form {
+      padding: 1rem;
+    }
   }
   

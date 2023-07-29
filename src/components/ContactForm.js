@@ -1,6 +1,6 @@
 // src/components/ContactForm.js
 import React, { useState } from "react";
-import "./ContactForm.css"
+import "./ContactForm.css";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -67,6 +67,18 @@ const ContactForm = () => {
         </div>
         <button type="submit">Send</button>
       </form>
+
+      {/* Additional contact details section */}
+      <div className="contact-details">
+        <h3>Contact Details</h3>
+        <p>
+          Address: DanilScenicTours, Nairobi, Kenya
+          <br />
+          Phone: +254 123 456 789
+          <br />
+          Email: danilscenictours@gmail.com
+        </p>
+      </div>
     </div>
   );
 };
