@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Typical from "react-typical";
 import "./Home.css";
-import makiwa from "./assets/makiwa-hd.png";
+import makiwa from "./makiwa-hd.png";
 import maasai from "./assets/maasai.jpg";
 import transport from "./assets/transport.jpg";
 import beauty from "./assets/beauty.jpg";
