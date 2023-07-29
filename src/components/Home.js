@@ -30,7 +30,7 @@ function Home() {
               loop={Infinity}
               wrapper="span"
               steps={[
-                "Welcome to Our Stunning Tourism Website",
+                "Welcome to Danil Scenic Tours",
                 2000,
                 "Explore the Beauty of Kenya",
                 2000,
